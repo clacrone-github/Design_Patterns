@@ -1,0 +1,8 @@
+
+public class SeattleMinnestrone extends Minnestrone {
+
+	public SeattleMinnestrone() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

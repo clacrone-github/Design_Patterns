@@ -1,6 +1,6 @@
-class Minnestrone extends Soup {
+class Minestrone extends Soup {
     
-	public Minnestrone() {
+	public Minestrone() {
 		this.soupName = "Minestrone";
 		this.soupIngredients.add("1 Pound tomatos");
 		this.soupIngredients.add("1/2 cup pasta");    

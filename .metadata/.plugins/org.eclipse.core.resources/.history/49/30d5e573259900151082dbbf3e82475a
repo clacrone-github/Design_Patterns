@@ -1,0 +1,14 @@
+class SeattleConcreteSoupFactory extends AbstractSoupFactory {
+    
+	public SeattleConcreteSoupFactory() {
+        this.factoryLocation = "Seattle";
+    }
+	
+    public ChickenSoup makeChickenSoup() {
+       return new SeattleChickenSoup();
+    }
+    
+    public Minnestrone makeMinnestrone() {
+       return new SeattleMinnestrone();
+    }
+}

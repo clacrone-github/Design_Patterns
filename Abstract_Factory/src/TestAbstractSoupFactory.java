@@ -6,7 +6,7 @@ public class TestAbstractSoupFactory {
        
 		Calendar currentCalendar = Calendar.getInstance();
 //		int dayOfWeek = currentCalendar.get(Calendar.DAY_OF_WEEK);
-        int dayOfWeek = Calendar.SUNDAY;
+        int dayOfWeek = Calendar.MONDAY;
         
 		switch(dayOfWeek) {
 			case Calendar.MONDAY:
@@ -16,7 +16,7 @@ public class TestAbstractSoupFactory {
 			case Calendar.WEDNESDAY:
 				return concreteSoupFactory.makeFishChowder();
 			case Calendar.THURSDAY:
-				return concreteSoupFactory.makeMinnestrone();
+				return concreteSoupFactory.makeMinestrone();
 			case Calendar.FRIDAY:
 				return concreteSoupFactory.makePastaFazul();
 			case Calendar.SATURDAY:
@@ -48,6 +48,10 @@ public class TestAbstractSoupFactory {
 	   System.out.println("The Soup of the day " + soupFactory.getFactoryLocation() + " is " + soupOfTheDay.getSoupName());
 	 
 	   soupFactory = new HonoluluConcreteSoupFactory();
+	   soupOfTheDay = MakeSoupOfTheDay(soupFactory);
+	   System.out.println("The Soup of the day " + soupFactory.getFactoryLocation() + " is " + soupOfTheDay.getSoupName());
+	   
+	   soupFactory = new SeattleConcreteSoupFactory();
 	   soupOfTheDay = MakeSoupOfTheDay(soupFactory);
 	   System.out.println("The Soup of the day " + soupFactory.getFactoryLocation() + " is " + soupOfTheDay.getSoupName());
    }

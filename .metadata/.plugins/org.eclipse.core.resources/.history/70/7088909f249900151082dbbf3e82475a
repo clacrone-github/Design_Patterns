@@ -1,0 +1,14 @@
+class SeattleConcreteSoupFactory extends AbstractSoupFactory {
+    
+	public SeattleConcreteSoupFactory() {
+        this.factoryLocation = "Seattle";
+    }
+	
+    public ClamChowder makeClamChowder() {
+       return new HonoluluClamChowder();
+    }
+    
+    public FishChowder makeFishChowder() {
+       return new HonoluluFishChowder();
+    }
+}

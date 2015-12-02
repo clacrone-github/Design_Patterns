@@ -17,8 +17,8 @@ public abstract class AbstractSoupFactory {
         return new FishChowder();
     }     
     
-    public Minnestrone makeMinnestrone() {
-        return new Minnestrone();
+    public Minestrone makeMinestrone() {
+        return new Minestrone();
     }
     
     public PastaFazul makePastaFazul() {
@@ -32,5 +32,4 @@ public abstract class AbstractSoupFactory {
     public VegetableSoup makeVegetableSoup() {
         return new VegetableSoup();
     }
-
 }
